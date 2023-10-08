@@ -6,7 +6,7 @@ import com.project.calc.Command;
 public class Print implements Command {
     @Override
     public void execute(String[] args, CalcContext ctx) {
-        System.out.println(ctx.getStack().getFirst());
+        System.out.println(ctx.getStack().pop());
     }
 
 }

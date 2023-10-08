@@ -1,15 +1,12 @@
 package com.project.calc;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class CalcContext {
-    private Deque<Double> stack = new ArrayDeque<Double>();
+    private Stack<Double> stack = new Stack<>();
     private Map<String, Double> consts = new HashMap<>();
 
-    public Deque<Double> getStack() {
+    public Stack<Double> getStack() {
         return stack;
     }
 
